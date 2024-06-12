@@ -3,7 +3,7 @@ struct BaseballGame {
     func start() {
         let answer = makeAnswer() // 정답을 만드는 함수
         
-        print("게임을 시작하겠습니다")
+        print("게임을 시작하겠습니다!")
         
         while true {
             print("숫자를 입력하세요", terminator: " ")
@@ -66,3 +66,4 @@ struct BaseballGame {
         return digits
     }
 }
+//test

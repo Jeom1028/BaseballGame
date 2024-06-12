@@ -22,6 +22,7 @@ struct BaseballGame {
                 continue
             }
             
+            
             let digits = String(number).compactMap { Int(String($0)) }
             
             guard digits.count == 3, Set(digits).count == 3 else {
@@ -55,7 +56,8 @@ struct BaseballGame {
         var digits = [Int]()
         
         while digits.count < 3 {
-            let digit = Int.random(in: 1...9)
+            //첫번째 숫자가 0이 안나오게 하기
+            let digit = Int.random(in: digits.isEmpty ? 1...9 : 0...9)
             if !digits.contains(digit) {
                 digits.append(digit)
             }

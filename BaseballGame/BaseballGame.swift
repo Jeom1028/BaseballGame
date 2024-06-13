@@ -1,6 +1,6 @@
 class BaseballGame {
 
-    var tryCnt: [Int] = [] // 시도 횟수를 저장하는 배열
+    var tryCount: [Int] = [] // 시도 횟수를 저장하는 배열
     var count: Int = 0 // 게임 횟수를 저장하는 변수
     
     func start() {
@@ -20,7 +20,7 @@ class BaseballGame {
             case 2:
                 print("< 게임 기록 보기 >")
                 for i in 0..<count {
-                    print("\(i + 1)번째 게임 : 시도 횟수 - \(tryCnt[i])")
+                    print("\(i + 1)번째 게임 : 시도 횟수 - \(tryCount[i])")
                 }
             case 3:
                 print("게임을 종료하겠습니다")
@@ -82,7 +82,7 @@ class BaseballGame {
         }
 
         // 게임이 끝난 후 시도 횟수를 기록하고 게임 횟수를 증가
-        tryCnt.append(trialCount)
+        tryCount.append(trialCount)
         count += 1
     }
 

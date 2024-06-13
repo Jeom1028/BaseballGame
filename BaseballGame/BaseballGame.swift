@@ -4,7 +4,7 @@ class BaseballGame {
     var count: Int = 0 // 게임 횟수를 저장하는 변수
     
     func start() {
-        print("환영합니다! 원하시는 번호를 입력해주세요")
+        print("원하시는 번호를 입력해주세요")
         while true {
             print("1. 게임 시작하기  2. 게임 기록 보기  3. 종료하기")
             print("선택하세요", terminator: " ")
